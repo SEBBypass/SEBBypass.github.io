@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEBB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>SEBB - ID</h1>
+        <input type="number" id="search-bar" style="width: 124px;" placeholder="ID:" autocomplete="off" />
+        
+        <div class="url-options">
+            <label for="urls">Escolha os sites para abrir:</label><br>
+            <input type="checkbox" id="chatgpt" style="height: 13px; width: 13px;" checked> ChatGPT<br>
+            <input type="checkbox" id="custom1" style="height: 13px; width: 13px;"> Google<br>
+            <input type="checkbox" id="custom2" style="height: 13px; width: 13px;"> Copilot<br>
+            <input type="url" id="new-url" style="width: 224px;" placeholder="Adicione uma nova URL" />
+        </div>
+        
+        <button onclick="abrir()">Start</button>
+    </div>
+</body>
+</html>
