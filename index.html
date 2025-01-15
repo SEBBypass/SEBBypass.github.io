@@ -4,6 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirecionamento</title>
+  <style>
+    body {
+      background: #1e1e1e;
+      color: #00ff99;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #00ff99;
+    }
+
+    button {
+      background: #00ff99;
+      color: #1e1e1e;
+      border: 2px solid #00ff99;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      cursor: pointer;
+      outline: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #1e1e1e;
+      color: #00ff99;
+      box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    /* Estilo para links */
+    a {
+      text-decoration: none;
+      color: #00ff99;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff6600;
+    }
+  </style>
   <script>
     let urlMoodle = '';
     function abrirfirst() {
@@ -15,6 +72,6 @@
 </head>
 <body>
   <h1>SEB-Bypass</h1>
-  <button onclick="abrirfirst()">First</button>
+  <button onclick="abrirfirst()">START</button>
 </body>
 </html>
