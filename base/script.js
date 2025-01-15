@@ -1,11 +1,6 @@
 let urlMoodle = '';
-
 const sites = {
   chatgpt: 'https://chatgpt.com',
-  /*
-  custom1: 'https://www.google.com',
-  custom2: 'https://copilot.microsoft.com',
-  */
 };
 
 function carregarURL() {
@@ -20,28 +15,12 @@ function carregarURL() {
 function abrir() {
   carregarURL();
 
-  let openedTabs = [];
   if (document.getElementById('chatgpt').checked) {
-    openedTabs.push(window.open(sites.chatgpt, '_blank'));
-  }
-
-  /*
-  if (document.getElementById('custom1').checked) {
-    openedTabs.push(window.open(sites.custom1, '_blank'));
-  }
-
-  if (document.getElementById('custom2').checked) {
-    openedTabs.push(window.open(sites.custom2, '_blank'));
-  }
-  */
-
-  // Abrir nova URL se fornecida
-  const newUrl = document.getElementById('new-url').value;
-  if (newUrl) {
-    openedTabs.push(window.open(newUrl, '_blank'));
+    window.open(sites.chatgpt, '_blank');
   }
 
   if (urlMoodle) {
+    console.log('Redirecionando para a URL do Moodle:', urlMoodle);
     setTimeout(() => {
       window.location.href = urlMoodle;
     }, 2000);
