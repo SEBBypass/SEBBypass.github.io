@@ -13,7 +13,9 @@ Antes de clicar no botão **Start**, **memorize o ID da Variante da Prova**, poi
 ---
 
 ## 🌐 Interface
-
+```diff
+- Old Version
+```
 ```html
 <!DOCTYPE html>
 <html lang="pt">
