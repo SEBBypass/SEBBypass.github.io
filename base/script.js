@@ -1,6 +1,6 @@
 let urlMoodle = '';
 
-const urlNew = 'https://betamoodle.unicv.cv/login/index.php';
+
 const sites = {
   chatgpt: 'https://chatgpt.com',
 };
@@ -17,7 +17,7 @@ function carregarURL() {
 
 function openUrl(event) {
   event.preventDefault(); // Evita o reload padrão do formulário
-  const urlInput = document.getElementById('search-bar').value.trim();
+  const urlInput = document.getElementById('search').value.trim();
   
   if (urlInput) {
       const url = urlInput.startsWith('http://') || urlInput.startsWith('https://') 
