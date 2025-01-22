@@ -10,19 +10,22 @@
 <body>
     <div class="container">
         <h1>SEB/B</h1>
-        <p>Que URL? Exemplo: </p>
-        <p>https://www.google.com; https://copilot.microsoft.com</p> <!-- <span style="color: #ff6600; font-weight: bold; font-size: 1.2em;">864</span> -->
-        <br>Primeiro adiciona quantos Websites quiser e depois click em <span style="color: #ff6600; font-weight: bold; font-size: 1.2em;">Boa Sorte</span></br>
-        
+        <p>Que ID? Exemplo: </p>
+        <p>https://betamoodle.unicv.cv/mod/quiz/.../config.php?cmid=<span style="color: #ff6600; font-weight: bold; font-size: 1.2em;">864</span></p>
         <br></br>
-        <form id="url-form" onsubmit="openUrl(event)">
-            <input type="search" id="search-bar" style="width: 424px;" placeholder="URLs" autocomplete="on" />
-            <input type="submit" id="submit" style="width: 124px;" />
-        </form>
+        <input type="number" id="search-bar" style="width: 124px;" placeholder="ID:" autocomplete="off" />
+        
         <div class="url-options">
             <label for="urls">Abrir com ChatGPT?</label><br>
             <input type="checkbox" id="chatgpt" style="height: 13px; width: 13px;" checked> ChatGPT<br>
         </div>
+        <form id="url-form" onsubmit="openUrl(event)">
+            <br>Primeiro adiciona quantos Websites quiser e depois click em <span style="color: #ff6600; font-weight: bold; font-size: 1.2em;">Boa Sorte</span></br>
+            <input type="search" id="search-bar" style="width: 424px;" placeholder="URLs" autocomplete="on" />
+            <input type="submit" id="submit" style="width: 124px;" />
+        </form>
+        <p></p>
+        
         
         <button onclick="abrir()">Boa Sorte</button>
     </div>
