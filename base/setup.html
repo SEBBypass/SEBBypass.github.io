@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEBB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>SEB/B</h1>
+        <p>Que URL? Exemplo: </p>
+        <p>https://www.google.com; https://copilot.microsoft.com</p> <!-- <span style="color: #ff6600; font-weight: bold; font-size: 1.2em;">864</span> -->
+        <br>Primeiro adiciona quantos Websites quiser e depois click em <span style="color: #ff6600; font-weight: bold; font-size: 1.2em;">Boa Sorte</span></br>
+        
+        <br></br>
+        <form id="url-form" onsubmit="openUrl(event)">
+            <input type="search" id="search-bar" style="width: 424px;" placeholder="URLs" autocomplete="on" />
+            <input type="submit" id="submit" style="width: 124px;" />
+        </form>
+        <div class="url-options">
+            <label for="urls">Abrir com ChatGPT?</label><br>
+            <input type="checkbox" id="chatgpt" style="height: 13px; width: 13px;" checked> ChatGPT<br>
+        </div>
+        
+        <button onclick="abrir()">Boa Sorte</button>
+    </div>
+</body>
+</html>
