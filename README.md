@@ -52,7 +52,7 @@ Antes de clicar no botão **Start**, **memorize o ID da Variante da Prova**, poi
 
 - [Moodle](https://betamoodle.unicv.cv)
 - [ChatGPT](https://chatgpt.com)
-- [Seb-bypass Page](SEBBypass.github.io)
+- [Seb-bypass Page](https://SEBBypass.github.io)
 
 ---
 
